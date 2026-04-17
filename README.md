@@ -121,7 +121,7 @@ Intermediate `.mmd` and `.pdf` files are output to the `mermaid/` directory righ
 
 They are basically output to `mermaid/` in the same way, but when `-output-directory` is used, they are placed in `$TEXMF_OUTPUT_DIRECTORY/mermaid/`.
 
-For full explanations and diagram examples, see `mermaid-sample.tex` / `mermaid-sample-ja.tex` (`mermaid`) and `ltmermaid-sample.tex` / `ltmermaid-sample-ja.tex` (`ltmermaid`).
+For full explanations and diagram examples, see `mermaid-doc.tex` / `mermaid-doc-ja.tex` (`mermaid`) and `ltmermaid-doc.tex` / `ltmermaid-doc-ja.tex` (`ltmermaid`).
 
 ---
 
