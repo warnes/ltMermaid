@@ -9,8 +9,6 @@ The implementation to be used with pdfLaTeX / XeLaTeX / upLaTeX / LuaLaTeX, etc.
 - `ltmermaid.sty` (`ltmermaid`)  
 An implementation dedicated to LuaLaTeX that provides the same macros (the `Renderer` option, `\Mermaid...` macros, and the `mermaid` environment) as the `mermaid` package above. The CLI is invoked via Lua's `os.execute`, and the package handles LuaLaTeX-specific behavior such as outputting to `mermaid/` under `-output-directory` / `TEXMF_OUTPUT_DIRECTORY`.
 
-Both packages can be chosen when using `lualatex`. The distinction is that you use `mermaid` when you want to use Mermaid with an engine other than Lua, and `ltmermaid` when you prefer a LuaLaTeX-native implementation and output-directory coordination.
-
 Author: Ryoya Ando — [https://ryoya9826.github.io/](https://ryoya9826.github.io/)  
 License: [LPPL](https://www.latex-project.org/lppl.txt) version 1.3c  
 Source & issues: [https://github.com/ryoya9826/ltMermaid](https://github.com/ryoya9826/ltMermaid)
@@ -129,10 +127,12 @@ For full explanations and diagram examples, see `mermaid-doc.tex` / `mermaid-doc
 
 ### `mermaid.sty`
 
+- Version 1.0a (2026-04-20): Renamed sample documents.
 - Version 1.0 (2026-04-16): Stable release.
 
 ### `ltmermaid.sty`
 
+- Version 1.0a (2026-04-20): Renamed sample documents.
 - Version 1.0 (2026-04-16): Stable release.
 - Version 0.2 (2026-04-13): Removed `MERMAID_MMDC` and `MERMAID_MMDC_OPTIONS`.
 - Version 0.1 (2026-04-08): Initial release.
