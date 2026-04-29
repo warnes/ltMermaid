@@ -167,6 +167,7 @@ flowchart LR
 \end{itemize}
 \par}
 
+
 \section{User commands}
 
 {\small
@@ -181,8 +182,18 @@ flowchart LR
 \item \textbf{\cmd{MermaidGraphicsOpts}\texttt{\{...\}}:}
   Additional keys for \cmd{includegraphics} (rotation, \texttt{trim}, etc.).
   Width is usually set with \cmd{MermaidAdjustBoxOpts}.
+\item \textbf{\cmd{mermaidfile}\texttt{\{filename\}}:}
+  Render a Mermaid diagram from an external file (\texttt{.mmd}) instead of inline code. The diagram is rendered and included just like the \texttt{mermaid} environment, but the source is read from the specified file.
 \end{itemize}
 \par}
+
+\subsection{Including diagrams from files}
+
+You can use \cmd{mermaidfile}\texttt{\{filename\}} to render a Mermaid diagram from an external file. Example:
+
+\begin{lstlisting}
+\mermaidfile{diagram-001.mmd}
+\end{lstlisting}
 
 \section{Output files}
 
