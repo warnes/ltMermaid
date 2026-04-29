@@ -11,7 +11,8 @@ An implementation dedicated to LuaLaTeX that provides the same macros (the `Rend
 
 Author: Ryoya Ando — [https://ryoya9826.github.io/](https://ryoya9826.github.io/)  
 License: [LPPL](https://www.latex-project.org/lppl.txt) version 1.3c  
-Source & issues: [https://github.com/ryoya9826/ltMermaid](https://github.com/ryoya9826/ltMermaid)
+Source & issues: [https://github.com/ryoya9826/ltMermaid](https://github.com/ryoya9826/ltMermaid)  
+Contributors: [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
 ---
 
@@ -93,6 +94,20 @@ Compilation is only possible with LuaLaTeX:
 lualatex -shell-escape yourfile.tex
 ```
 
+### Using `\mermaidfile`
+
+The `\mermaidfile{filename}` command renders Mermaid source from an external `.mmd` file and includes the resulting PDF.
+This works with both `mermaid` and `ltmermaid`.
+
+```latex
+\documentclass{article}
+\usepackage{ltmermaid} % or mermaid
+
+\begin{document}
+\mermaidfile{diagram-001.mmd}
+\end{document}
+```
+
 ---
 
 ### Renderer and Macros
@@ -127,11 +142,13 @@ For full explanations and diagram examples, see `mermaid-doc.tex` / `mermaid-doc
 
 ### `mermaid.sty`
 
+- Version 1.0b (2026-04-29): Added `\mermaidfile`support, Makefile build/test targets, and `l3build` regression testing
 - Version 1.0a (2026-04-20): Renamed sample documents.
 - Version 1.0 (2026-04-16): Stable release.
 
 ### `ltmermaid.sty`
 
+- Version 1.0b (2026-04-29): Added `\mermaidfile`support, Makefile build/test targets, and `l3build` regression testing
 - Version 1.0a (2026-04-20): Renamed sample documents.
 - Version 1.0 (2026-04-16): Stable release.
 - Version 0.2 (2026-04-13): Removed `MERMAID_MMDC` and `MERMAID_MMDC_OPTIONS`.
